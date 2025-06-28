@@ -25,11 +25,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05"/>
 
-    <LinearLayout
-        android:id="@+id/frameList"
-        android:layout_width="320dp"
+    <GridLayout
+        android:layout_width="340dp"
         android:layout_height="680dp"
-        android:gravity="top|center|bottom"
+        android:gravity="start|center|top"
+        android:columnCount="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -38,6 +38,7 @@
         app:layout_constraintVertical_bias="1">
 
         <Button
+            android:tag="btnListas"
             android:id="@+id/btnLista"
             android:layout_width="150dp"
             android:layout_height="150dp"
@@ -51,6 +52,7 @@
             app:layout_constraintVertical_bias="0.05"/>
 
         <Button
+            android:tag="btnListas"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_margin="10dp"
@@ -61,14 +63,65 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.05"/>
-    </LinearLayout>
 
-    <LinearLayout
+        <Button
+            android:tag="btnListas"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:foreground="@drawable/list_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05"/>
+
+        <Button
+            android:tag="btnListas"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:foreground="@drawable/list_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05"/>
+
+        <Button
+            android:tag="btnListas"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:foreground="@drawable/list_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05"/>
+
+        <Button
+            android:tag="btnListas"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:foreground="@drawable/list_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05"/>
+    </GridLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="75dp"
         android:layout_height="170dp"
         android:layout_gravity="end"
         android:layout_marginEnd="25dp"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1"
@@ -77,24 +130,42 @@
         app:layout_constraintVertical_bias="0.95">
 
         <Button
+            android:id="@+id/btnEdit"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:layout_marginBottom="10dp"
             android:foreground="@drawable/round_button"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/edit_icon"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnFixadas"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:layout_marginTop="10dp"
             android:foreground="@drawable/round_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-    </LinearLayout>
+            app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="12dp"
+            android:rotation="180"
+            android:rotationX="0"
+            android:rotationY="0"
+            android:src="@drawable/arrow_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

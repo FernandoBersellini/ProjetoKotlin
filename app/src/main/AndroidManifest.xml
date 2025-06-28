@@ -16,7 +16,7 @@
             android:name=".Tarefas"
             android:exported="false" />
         <activity
-            android:name=".SegundaTela"
+            android:name=".Fixadas"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
