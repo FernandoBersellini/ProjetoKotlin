@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">ProjetoKotlin</string>
     <string name="segunda_tela">Segunda Tela</string>
-    <string name="checklist">Checklist</string>
+    <string name="list">LISTAS</string>
 </resources>
