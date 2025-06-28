@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">ProjetoKotlin</string>
-    <string name="segunda_tela">Segunda Tela</string>
     <string name="list">LISTAS</string>
+    <string name="fixed">FIXADAS</string>
+    <string name="todo">TAREFAS</string>
 </resources>
