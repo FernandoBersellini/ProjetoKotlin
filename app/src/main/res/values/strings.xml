@@ -3,6 +3,7 @@
     <string name="list">LISTAS</string>
     <string name="fixed">FIXADAS</string>
     <string name="pin">FIXAR LISTA</string>
+    <string name="create">CRIAR LISTA</string>
     <string name="todo">TAREFAS</string>
     <string name="editMode">MODO EDIÇÃO:</string>
     <string name="empty_list">Não há listas criadas!</string>
