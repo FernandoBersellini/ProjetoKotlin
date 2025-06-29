@@ -65,238 +65,59 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1">
 
-        <androidx.constraintlayout.widget.ConstraintLayout>
-            <Button
-                android:id="@+id/btnLista1"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:foreground="@drawable/list_button"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.05"/>
-            <Button
-                android:id="@+id/btnFixar1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:foreground="@drawable/round_button"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-            <ImageView
-                android:id="@+id/pinFixar1"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginBottom="12dp"
-                android:src="@drawable/pin_icon"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_margin="10dp"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout>
-            <Button
-                android:id="@+id/btnLista2"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:foreground="@drawable/list_button"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.05"/>
-            <Button
-                android:id="@+id/btnFixar2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:foreground="@drawable/round_button"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-            <ImageView
-                android:id="@+id/pinFixar2"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginBottom="12dp"
-                android:src="@drawable/pin_icon"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_margin="10dp"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout>
-            <Button
-                android:id="@+id/btnLista3"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:foreground="@drawable/list_button"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.05"/>
-            <Button
-                android:id="@+id/btnFixar3"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:foreground="@drawable/round_button"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-            <ImageView
-                android:id="@+id/pinFixar3"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginBottom="12dp"
-                android:src="@drawable/pin_icon"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_margin="10dp"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout>
-            <Button
-                android:id="@+id/btnLista4"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:foreground="@drawable/list_button"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.05"/>
-            <Button
-                android:id="@+id/btnFixar4"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:foreground="@drawable/round_button"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-            <ImageView
-                android:id="@+id/pinFixar4"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginBottom="12dp"
-                android:src="@drawable/pin_icon"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_margin="10dp"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout>
-            <Button
-                android:id="@+id/btnLista5"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:foreground="@drawable/list_button"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.05"/>
-            <Button
-                android:id="@+id/btnFixar5"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:foreground="@drawable/round_button"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-            <ImageView
-                android:id="@+id/pinFixar5"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginBottom="12dp"
-                android:src="@drawable/pin_icon"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_margin="10dp"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout>
-            <Button
-                android:id="@+id/btnLista6"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:foreground="@drawable/list_button"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.05"/>
-            <Button
-                android:id="@+id/btnFixar6"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:foreground="@drawable/round_button"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-            <ImageView
-                android:id="@+id/pinFixar6"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginBottom="12dp"
-                android:src="@drawable/pin_icon"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_margin="10dp"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listasGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_lista"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
     </GridLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="75dp"
-        android:layout_height="170dp"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
         android:layout_gravity="end"
         android:layout_marginEnd="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintHorizontal_bias="1.02"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95">
+        app:layout_constraintVertical_bias="1">
 
-        <Button
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnEdit"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:foreground="@drawable/round_button"
+            android:backgroundTint="#dfdfdf"
+            android:contentDescription="@string/pin"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/edit_icon"
-            android:layout_marginTop="12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:srcCompat="@drawable/edit_icon"
+            app:maxImageSize="35dp"
+            app:fabCustomSize="75dp"
+            app:tint="#000"/>
 
-        <Button
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnFixadas"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:foreground="@drawable/round_button"
+            android:backgroundTint="#dfdfdf"
+            android:contentDescription="@string/pin"
+            android:layout_marginBottom="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="12dp"
-            android:src="@drawable/pin_icon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/pin_icon"
+            app:maxImageSize="35dp"
+            app:fabCustomSize="75dp"
+            app:tint="#000"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

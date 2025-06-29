@@ -11,6 +11,7 @@ import com.example.projetokotlin.databinding.ActivityFixadasBinding
 class Fixadas : AppCompatActivity() {
 
     private lateinit var binding : ActivityFixadasBinding
+    private var modoEdicao: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,19 +26,16 @@ class Fixadas : AppCompatActivity() {
             insets
         }
 
-        binding.btnListaFixada1.setOnClickListener {
-            val trocarTela = Intent(this, Tarefas::class.java)
-            startActivity(trocarTela)
-        }
+        binding.textEdit.text = "OFF"
 
-        binding.btnListaFixada2.setOnClickListener {
-            val trocarTela = Intent(this, Tarefas::class.java)
-            startActivity(trocarTela)
-        }
-
-        binding.btnListaFixada3.setOnClickListener {
-            val trocarTela = Intent(this, Tarefas::class.java)
-            startActivity(trocarTela)
+        binding.btnEdit.setOnClickListener {
+            if (!modoEdicao) {
+                modoEdicao = true;
+                binding.textEdit.text = "ON"
+            } else {
+                modoEdicao = false;
+                binding.textEdit.text = "OFF"
+            }
         }
 
         binding.btnMain.setOnClickListener {
