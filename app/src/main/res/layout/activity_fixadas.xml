@@ -38,44 +38,52 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1">
 
-        <Button
-            android:tag="btnListaFixada"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_margin="10dp"
-            android:foreground="@drawable/fixed_list_button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.05"/>
+        <androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/btnListaFixada1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:foreground="@drawable/fixed_list_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.05"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Button
-            android:tag="btnListaFixada"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_margin="10dp"
-            android:foreground="@drawable/fixed_list_button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.05"/>
+        <androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/btnListaFixada2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:foreground="@drawable/fixed_list_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.05"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Button
-            android:tag="btnListaFixada"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_margin="10dp"
-            android:foreground="@drawable/fixed_list_button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.05"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/btnListaFixada3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:foreground="@drawable/fixed_list_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.05"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </GridLayout>
 
 
@@ -123,8 +131,6 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="12dp"
             android:rotation="180"
-            android:rotationX="0"
-            android:rotationY="0"
             android:src="@drawable/arrow_icon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -3,4 +3,5 @@
     <string name="list">LISTAS</string>
     <string name="fixed">FIXADAS</string>
     <string name="todo">TAREFAS</string>
+    <string name="editMode">MODO EDIÇÃO:</string>
 </resources>

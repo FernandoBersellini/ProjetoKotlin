@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.projetokotlin.databinding.ActivityMainBinding
 import com.example.projetokotlin.databinding.ActivityTarefasBinding
+import com.example.projetokotlin.model.Lista
 
 class Tarefas : AppCompatActivity() {
 
@@ -25,6 +26,7 @@ class Tarefas : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
 
         binding.btnMain.setOnClickListener {
             val trocarTela = Intent(this, MainActivity::class.java)

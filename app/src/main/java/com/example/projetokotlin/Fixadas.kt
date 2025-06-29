@@ -25,6 +25,21 @@ class Fixadas : AppCompatActivity() {
             insets
         }
 
+        binding.btnListaFixada1.setOnClickListener {
+            val trocarTela = Intent(this, Tarefas::class.java)
+            startActivity(trocarTela)
+        }
+
+        binding.btnListaFixada2.setOnClickListener {
+            val trocarTela = Intent(this, Tarefas::class.java)
+            startActivity(trocarTela)
+        }
+
+        binding.btnListaFixada3.setOnClickListener {
+            val trocarTela = Intent(this, Tarefas::class.java)
+            startActivity(trocarTela)
+        }
+
         binding.btnMain.setOnClickListener {
             val trocarTela = Intent(this, MainActivity::class.java)
             startActivity(trocarTela)
