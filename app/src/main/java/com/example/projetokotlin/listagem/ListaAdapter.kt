@@ -8,6 +8,7 @@ import com.example.projetokotlin.databinding.ItemListaBinding
 import com.example.projetokotlin.model.entity.Lista
 
 class ListaAdapter(
+    private val onListaClick: (Lista) -> Unit,
     private val onDeleteClick: (Lista) -> Unit,
     private val onFixarClick: (Lista) -> Unit
 ): RecyclerView.Adapter<ListaAdapter.ListaViewHolder>() {
@@ -21,6 +22,10 @@ class ListaAdapter(
 
             binding.btnDelete.visibility = if (modoEdicao) View.VISIBLE else View.GONE
             binding.btnFixar.visibility = if (modoEdicao) View.VISIBLE else View.GONE
+
+            binding.btnLista.setOnClickListener {
+                onListaClick(lista)
+            }
 
             binding.btnDelete.setOnClickListener {
                 onDeleteClick(lista)

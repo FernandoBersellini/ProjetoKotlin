@@ -93,8 +93,8 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnCreate"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:backgroundTint="#dfdfdf"
             android:contentDescription="@string/create"
             app:layout_constraintTop_toTopOf="parent"
@@ -107,8 +107,8 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnEdit"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:backgroundTint="#dfdfdf"
             android:contentDescription="@string/pin"
             android:layout_marginBottom="30dp"
@@ -123,8 +123,8 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnFixadas"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:backgroundTint="#dfdfdf"
             android:contentDescription="@string/fixed"
             android:layout_marginBottom="30dp"

@@ -2,19 +2,13 @@ package com.example.projetokotlin.view
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.projetokotlin.R
 import com.example.projetokotlin.databinding.ActivityFixadasBinding
-import com.example.projetokotlin.listagem.ListaAdapter
 import com.example.projetokotlin.listagem.ListaFixadaAdapter
 import com.example.projetokotlin.listagem.ListaViewModel
-import com.example.projetokotlin.model.entity.Lista
 import kotlinx.coroutines.launch
 
 class Fixadas : AppCompatActivity() {
@@ -37,6 +31,12 @@ class Fixadas : AppCompatActivity() {
 
     private fun executarRecyclerView() {
         listaFixadaAdapter = ListaFixadaAdapter(
+            onListaClick = { lista ->
+                var intent = Intent(this, Tarefas::class.java)
+                intent.putExtra("listaId", lista.id)
+                intent.putExtra("titulo", lista.titulo)
+                startActivity(intent)
+            },
             onDesfixarClick = { lista ->
                 val desfixar = lista.copy(fixada = false)
                 viewModel.atualizarLista(desfixar)

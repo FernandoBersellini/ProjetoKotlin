@@ -4,11 +4,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.projetokotlin.databinding.ItemListaBinding
 import com.example.projetokotlin.databinding.ItemListaFixadaBinding
 import com.example.projetokotlin.model.entity.Lista
 
 class ListaFixadaAdapter(
+    private val onListaClick: (Lista) -> Unit,
     private val onDesfixarClick: (Lista) -> Unit
 ): RecyclerView.Adapter<ListaFixadaAdapter.ListaFixadaViewHolder>() {
 
@@ -20,6 +20,10 @@ class ListaFixadaAdapter(
             binding.btnLista.text = lista.titulo
 
             binding.btnDesfixar.visibility = if (modoEdicao) View.VISIBLE else View.GONE
+
+            binding.btnLista.setOnClickListener {
+                onListaClick(lista)
+            }
 
             binding.btnDesfixar.setOnClickListener {
                 onDesfixarClick(lista)

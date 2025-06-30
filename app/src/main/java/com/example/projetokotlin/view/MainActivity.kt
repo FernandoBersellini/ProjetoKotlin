@@ -32,6 +32,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun executarRecyclerView() {
         listaAdapter = ListaAdapter(
+            onListaClick = { lista ->
+                var intent = Intent(this, Tarefas::class.java)
+                intent.putExtra("listaId", lista.id)
+                intent.putExtra("titulo", lista.titulo)
+                startActivity(intent)
+            },
             onDeleteClick = { lista -> viewModel.deletarLista(lista)},
             onFixarClick = { lista ->
                 val atualizada = lista.copy(fixada = !lista.fixada)
@@ -53,7 +59,7 @@ class MainActivity : AppCompatActivity() {
     private fun configuraBotoes() {
         binding.btnCreate.setOnClickListener {
             lifecycleScope.launch {
-                val novaLista = Lista(0, "Teste", true)
+                val novaLista = Lista(0, "Teste", false)
                 viewModel.adicionarLista(novaLista)
             }
         }

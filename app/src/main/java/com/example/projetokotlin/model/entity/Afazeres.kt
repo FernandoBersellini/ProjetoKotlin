@@ -12,6 +12,7 @@ import androidx.room.PrimaryKey
         onDelete = ForeignKey.CASCADE)],
     indices = [Index("listaId")])
 data class Afazeres (
-    @PrimaryKey(autoGenerate = true) var listaId: Int,
-    var titulo: String
+    @PrimaryKey(autoGenerate = true) var id: Int,
+    var titulo: String,
+    val listaId: Int
 )
