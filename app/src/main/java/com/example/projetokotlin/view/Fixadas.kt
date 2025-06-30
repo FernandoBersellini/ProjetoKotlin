@@ -1,4 +1,4 @@
-package com.example.projetokotlin
+package com.example.projetokotlin.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.projetokotlin.R
 import com.example.projetokotlin.databinding.ActivityFixadasBinding
 
 class Fixadas : AppCompatActivity() {

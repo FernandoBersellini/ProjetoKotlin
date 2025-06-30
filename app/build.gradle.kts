@@ -1,11 +1,12 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.devtools.ksp")
 }
 
 android {
     namespace = "com.example.projetokotlin"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.projetokotlin"
@@ -37,10 +38,13 @@ android {
     viewBinding {
         enable = true
     }
+
+    ksp {
+        arg("room.schemaLocation", "$projectDir/schemas")
+    }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -51,4 +55,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //bibliotecas Android Room
+    val roomVersion = "2.6.1"//Versão do Android Room a ser utilizada
+    implementation(libs.androidx.room.runtime.v261)//Principal biblioteca do Android Room
+    implementation(libs.androidx.room.ktx.v261)//Fornece integração com o Kotlin
+    ksp(libs.androidx.room.compiler)//É responsável por gerar código Room em tempo de compilação através das anotações
+    annotationProcessor(libs.androidx.room.compiler)//Utilizado para   maior compatibilidade com outros tipos de anotações que precisam ser verificadas em tempo de compilação
 }

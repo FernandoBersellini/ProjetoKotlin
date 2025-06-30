@@ -15,11 +15,11 @@ interface ListasDAO {
     fun exibirListas() : Flow<List<Lista>>
 
     @Insert
-    fun insertLista(lista: Lista)
+    suspend fun insertLista(lista: Lista)
 
     @Update
-    fun updateLista(lista: Lista)
+    suspend fun updateLista(lista: Lista)
 
     @Delete
-    fun deleteLista(lista: Lista)
+    suspend fun deleteLista(lista: Lista)
 }
