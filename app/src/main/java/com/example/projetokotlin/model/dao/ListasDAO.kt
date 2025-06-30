@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.Flow
 interface ListasDAO {
 
     @Query("Select * from lista")
-    fun exibirListas() : Flow<List<Lista>>
+    fun getAllListas() : Flow<List<Lista>>
 
     @Insert
     suspend fun insertLista(lista: Lista)

@@ -57,7 +57,11 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     //bibliotecas Android Room
-    val roomVersion = "2.6.1"//Versão do Android Room a ser utilizada
+    val roomVersion = "2.6.2"//Versão do Android Room a ser utilizada
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
     implementation(libs.androidx.room.runtime.v261)//Principal biblioteca do Android Room
     implementation(libs.androidx.room.ktx.v261)//Fornece integração com o Kotlin
     ksp(libs.androidx.room.compiler)//É responsável por gerar código Room em tempo de compilação através das anotações
