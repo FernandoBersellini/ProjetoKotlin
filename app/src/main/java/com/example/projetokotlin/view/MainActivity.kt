@@ -2,7 +2,9 @@ package com.example.projetokotlin.view
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.EditText
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
@@ -58,10 +60,24 @@ class MainActivity : AppCompatActivity() {
 
     private fun configuraBotoes() {
         binding.btnCreate.setOnClickListener {
-            lifecycleScope.launch {
-                val novaLista = Lista(0, "Teste", false)
-                viewModel.adicionarLista(novaLista)
+            val input = EditText(this).apply {
+                hint = "Digite o nome da lista"
             }
+
+            AlertDialog.Builder(this)
+                .setTitle("Criar nova lista")
+                .setView(input)
+                .setPositiveButton("Criar") { _, _ ->
+                    val nomeDaLista = input.text.toString().trim()
+                    if(nomeDaLista.isNotEmpty()) {
+                        lifecycleScope.launch {
+                            val novaLista = Lista(0, nomeDaLista, false)
+                            viewModel.adicionarLista(novaLista)
+                        }
+                    }
+                }
+                .setNegativeButton("Cancelar", null)
+                .show()
         }
 
         binding.btnFixadas.setOnClickListener {

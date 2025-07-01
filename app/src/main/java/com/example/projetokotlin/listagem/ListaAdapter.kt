@@ -18,7 +18,7 @@ class ListaAdapter(
 
     inner class ListaViewHolder(val binding: ItemListaBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(lista: Lista) {
-            binding.btnLista.text = lista.titulo
+            binding.listaText.text = lista.titulo
 
             binding.btnDelete.visibility = if (modoEdicao) View.VISIBLE else View.GONE
             binding.btnFixar.visibility = if (modoEdicao) View.VISIBLE else View.GONE

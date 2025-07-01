@@ -1,8 +1,9 @@
 package com.example.projetokotlin.view
 
 import android.os.Bundle
-import android.widget.LinearLayout
+import android.widget.EditText
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -43,6 +44,8 @@ class Tarefas : AppCompatActivity() {
 
     private fun executarRecyclerView() {
         afazeresAdapter = AfazeresAdapter (
+            onCheckedChange = { estaMarcado ->
+                viewModel.atualizarAfazer(estaMarcado)},
             onDeleteClick = { afazeres ->
                 viewModel.deletarAfazer(afazeres)}
         )
@@ -59,10 +62,24 @@ class Tarefas : AppCompatActivity() {
     }
     private fun configuraBotoes() {
         binding.btnCreate.setOnClickListener {
-            lifecycleScope.launch {
-                val novoAfazer = Afazeres(0,"Teste2", listaId)
-                viewModel.adicionarAfazer(novoAfazer)
+            val input = EditText(this).apply {
+                hint = "Digite o nome da tarefa"
             }
+
+            AlertDialog.Builder(this)
+                .setTitle("Criar nova tarefa")
+                .setView(input)
+                .setPositiveButton("Criar") { _, _ ->
+                    val nomeDaTarefa = input.text.toString().trim()
+                    if(nomeDaTarefa.isNotEmpty()) {
+                        lifecycleScope.launch {
+                            val novoAfazer = Afazeres(0,nomeDaTarefa, listaId)
+                            viewModel.adicionarAfazer(novoAfazer)
+                        }
+                    }
+                }
+                .setNegativeButton("Cancelar", null)
+                .show()
         }
 
         binding.btnEdit.setOnClickListener {

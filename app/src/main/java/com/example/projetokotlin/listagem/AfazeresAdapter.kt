@@ -10,6 +10,7 @@ import com.example.projetokotlin.model.entity.Afazeres
 import com.example.projetokotlin.model.entity.Lista
 
 class AfazeresAdapter(
+    private val onCheckedChange: (Afazeres) -> Unit,
     private val onDeleteClick: (Afazeres) -> Unit
 ): RecyclerView.Adapter<AfazeresAdapter.AfazeresViewHolder>() {
 
@@ -20,6 +21,11 @@ class AfazeresAdapter(
         fun bind(afazeres: Afazeres) {
 
             binding.afazer.text = afazeres.titulo
+            binding.afazer.isChecked = afazeres.marcado
+
+            binding.afazer.setOnCheckedChangeListener { _, isChecked ->
+                onCheckedChange(afazeres.copy(marcado = isChecked))
+            }
 
             binding.btnDelete.visibility = if (modoEdicao) View.VISIBLE else View.GONE
 

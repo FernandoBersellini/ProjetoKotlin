@@ -17,7 +17,7 @@ class ListaFixadaAdapter(
 
     inner class ListaFixadaViewHolder(val binding: ItemListaFixadaBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(lista: Lista) {
-            binding.btnLista.text = lista.titulo
+            binding.listaText.text = lista.titulo
 
             binding.btnDesfixar.visibility = if (modoEdicao) View.VISIBLE else View.GONE
 
